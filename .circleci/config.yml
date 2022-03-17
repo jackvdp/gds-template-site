@@ -9,8 +9,8 @@ jobs:
     steps:
       - checkout
       - ruby/install-deps
-      - ruby/rspec-test
       - run: gem install bundler
+      - ruby/rspec-test
 
 workflows:
   build_and_test_workflow:
